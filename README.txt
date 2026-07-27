@@ -1,4 +1,4 @@
-Flightflow v0.3.1 prototype
+Flightflow v0.3.1 prototype build
 
 Changes from v0.3:
 - New Plan starts a clean flight-specific workspace while retaining aircraft defaults.
