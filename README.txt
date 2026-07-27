@@ -1,17 +1,13 @@
-Flightflow v0.3 prototype
+Flightflow v0.3.1 prototype
 
-Open index.html locally or host the folder on GitHub Pages.
-Use “Load today’s example” to populate YCAB–YKRY–Cooyar–YWSG–YCAB.
+Changes from v0.3:
+- New Plan starts a clean flight-specific workspace while retaining aircraft defaults.
+- Calculate Plan changes to Recalculate Plan after first calculation; any pre-departure input can be corrected and the complete unused plan regenerated.
+- Added local flight date and local departure time.
+- Added manual time-zone label and UTC/GMT offset in 30-minute increments.
+- Added date-aware Local <-> Zulu conversion, including previous/next UTC date crossings.
+- Navigation log now shows ETA Local and ETA Zulu.
+- Remaining-flight plan also shows local and Zulu ETD/ETA.
+- Updated PWA cache version.
 
-All safety-critical calculations are deterministic prebuilt logic:
-- wind triangle and variation
-- magnetic heading
-- groundspeed and ETE
-- landing allowances
-- fixed and mandatory INTER/TEMPO reserves
-- final fuel rounded upward
-- ETA, last-light target and daylight margin
-- remaining-flight revision from a selected point
-
-AI is not used for headings, groundspeed, fuel, reserve or daylight calculations.
-A future online AI component may translate METAR/TAF text, but the raw weather and pilot-confirmed reserve logic must remain visible.
+Calculation engine remains deterministic. AI is not used for safety-critical calculations.
